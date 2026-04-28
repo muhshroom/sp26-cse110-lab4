@@ -1,0 +1,17 @@
+function everySecond() {
+    setInterval(() => {
+        let d = new Date();
+        let time = d.toLocaleTimeString();
+        console.log(time);
+    }, 1000);
+}
+//everySecond();
+
+//Test
+function pr() {
+    console.log(1);
+    setTimeout(function() {console.log(2);}, 1000);
+    setTimeout(function() {console.log(3);}, 0);
+    console.log(4);
+}
+pr();
